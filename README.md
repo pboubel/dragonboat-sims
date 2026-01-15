@@ -123,23 +123,6 @@ Should coaches abandon synchronization? **Probably not**, because:
 
 But coaches shouldn't obsess over *perfect* timing — small variations may be benign or even beneficial.
 
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@misc{dragonboat2024,
-  title={Paddle Synchronization in Dragon Boats: A Computational Analysis of Hydrodynamic Effects},
-  author={[Your Name]},
-  year={2024},
-  url={https://github.com/YOUR_USERNAME/dragon-boat-sync}
-}
-```
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
 ## Contributing
 
 Contributions welcome! Particularly interested in:
