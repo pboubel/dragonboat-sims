@@ -1,0 +1,80 @@
+DRAGON BOAT SYNCHRONIZATION SIMULATION RESULTS
+======================================================================
+
+SIMULATION PARAMETERS
+------------------------------
+Boat mass: 1200.0 kg
+Hull drag coefficient: 0.01
+Paddlers: 20
+Peak force per paddler: 250.0 N
+Stroke rate: 60.0 spm
+Stroke duration: 0.5 s
+
+RESULTS SUMMARY
+------------------------------
+Perfect Sync:
+  Mean velocity: 4.2766 m/s
+  Final velocity: 3.9911 m/s
+  Distance: 119.40 m
+
+Random +/-10%:
+  Mean velocity: 4.2775 m/s
+  Final velocity: 4.0005 m/s
+  Distance: 117.26 m
+
+Random +/-20%:
+  Mean velocity: 4.2795 m/s
+  Final velocity: 4.0585 m/s
+  Distance: 117.32 m
+
+Random +/-30%:
+  Mean velocity: 4.2814 m/s
+  Final velocity: 4.1472 m/s
+  Distance: 117.39 m
+
+Left/Right Split:
+  Mean velocity: 4.2775 m/s
+  Final velocity: 4.0160 m/s
+  Distance: 117.43 m
+
+Front-to-Back Wave:
+  Mean velocity: 4.2775 m/s
+  Final velocity: 4.0847 m/s
+  Distance: 119.07 m
+
+
+======================================================================
+ANALYSIS REPORT
+======================================================================
+
+Baseline (Perfect Sync): 4.2766 m/s
+
+Comparison with other timing patterns:
+--------------------------------------------------
+
+Random +/-10%:
+  Mean velocity: 4.2775 m/s
+  Difference: +0.0009 m/s (+0.020%)
+
+Random +/-20%:
+  Mean velocity: 4.2795 m/s
+  Difference: +0.0029 m/s (+0.068%)
+
+Random +/-30%:
+  Mean velocity: 4.2814 m/s
+  Difference: +0.0048 m/s (+0.113%)
+
+Left/Right Split:
+  Mean velocity: 4.2775 m/s
+  Difference: +0.0009 m/s (+0.021%)
+
+Front-to-Back Wave:
+  Mean velocity: 4.2775 m/s
+  Difference: +0.0009 m/s (+0.020%)
+
+--------------------------------------------------
+
+Total velocity spread: 0.0048 m/s (0.113%)
+Mean of all configurations: 4.2784 m/s
+Std deviation: 0.0016 m/s
+
