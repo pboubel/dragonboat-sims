@@ -4,23 +4,6 @@
 
 This repository contains physics-based simulations investigating the hydrodynamic effects of paddle timing in dragon boat racing. 
 
-## Key Findings
-
-### TL;DR
-- **Simplified model**: Synchronization has negligible effect (< 0.1% velocity difference)
-- **With hydrodynamic effects**: Desynchronization provides ~3.5% velocity advantage
-- **Dominant mechanism**: Blade-to-blade coupling — synchronized strokes cause all paddles to compete for the same water
-
-### Results Summary
-
-| Effect | Sync vs Random | Winner |
-|--------|---------------|--------|
-| Wake interactions | +0.37% | Sync |
-| Blade-to-blade coupling | +2.67% | **Random** |
-| Added mass | +0.42% | Random |
-| Hull trim | < 0.01% | Negligible |
-| **Combined** | **+3.45%** | **Random** |
-
 ## Quick Start
 
 ### Requirements
@@ -44,7 +27,7 @@ This runs the simplified model showing synchronization has negligible effect und
 python dragon_boat_enhanced.py
 ```
 
-This includes all second-order hydrodynamic effects:
+This includes second-order hydrodynamic effects:
 1. Wake interactions between paddles
 2. Blade-to-blade hydrodynamic coupling
 3. Added mass during acceleration
@@ -55,7 +38,6 @@ This includes all second-order hydrodynamic effects:
 ### Basic Model
 - 20 paddlers, each producing half-sine force pulses
 - Quadratic hull drag: F = ½ρCdAv²
-- Impulse conservation argument shows sync doesn't matter
 
 ### Second-Order Effects
 
@@ -67,7 +49,7 @@ This includes all second-order hydrodynamic effects:
 
 **Hull Trim**: Crew weight shifts during strokes cause pitching, which affects drag coefficient.
 
-## Parameters
+## Default Parameters
 
 | Parameter | Value |
 |-----------|-------|
