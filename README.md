@@ -21,29 +21,6 @@ This repository contains physics-based simulations investigating the hydrodynami
 | Hull trim | < 0.01% | Negligible |
 | **Combined** | **+3.45%** | **Random** |
 
-## Repository Structure
-
-```
-dragon-boat-sync/
-├── src/
-│   ├── dragon_boat_sim.py          # Basic simulation (simplified model)
-│   ├── dragon_boat_enhanced.py     # Full simulation with 2nd-order effects
-│   └── dragon_boat_visualizations.py  # Plotting and analysis
-├── figures/
-│   ├── dragon_boat_results.png     # Basic simulation results
-│   ├── dragon_boat_force_analysis.png
-│   ├── dragon_boat_monte_carlo.png
-│   ├── effect_breakdown.png        # Effect comparison
-│   └── effect_analysis_detailed.png
-├── paper/
-│   ├── dragon_boat_paper_full.tex  # LaTeX source
-│   ├── dragon_boat_paper_full.pdf  # Compiled paper
-│   └── effect_breakdown.png        # Figure for paper
-├── README.md
-├── LICENSE
-└── requirements.txt
-```
-
 ## Quick Start
 
 ### Requirements
@@ -102,26 +79,6 @@ This includes all second-order hydrodynamic effects:
 | Peak force/paddler | 250 N |
 | Stroke duration | 0.5 s |
 | Stroke rate | 60 spm |
-
-## Why Does Desync Help?
-
-The key insight is **blade-to-blade hydrodynamic coupling**:
-
-1. **Water is incompressible** — when a blade pulls through water, it accelerates a mass of water backward
-2. **Synchronized = maximum competition** — all 20 blades hit water simultaneously, all trying to accelerate the same fluid
-3. **Staggered = reduced competition** — only ~10-12 blades active at any moment, each gets "fresher" water
-
-The coupling penalty drops from ~6.6% (sync) to ~6.2% (random), which compounds through the v² drag relationship to give a measurable velocity advantage.
-
-## Practical Implications
-
-Should coaches abandon synchronization? **Probably not**, because:
-- Paddle collisions are dangerous
-- Boat stability requires symmetric forces
-- Stroke technique may degrade when desync'd
-- Team psychology benefits from rhythm
-
-But coaches shouldn't obsess over *perfect* timing — small variations may be benign or even beneficial.
 
 ## Contributing
 
